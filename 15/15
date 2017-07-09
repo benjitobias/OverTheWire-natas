@@ -1,0 +1,9 @@
+Had some issues on this one, ended up getting on the irc and has for some help.
+Basically had to brute force the password with a blind SQLi, the issue was that I used 'like'
+which isn't case sensitive. I worked that out by talking to an admin over irc. To fix I used 
+'like binary' makingthe query case sensitive.
+
+Script is in folder.
+
+Flag:
+WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
