@@ -1,0 +1,10 @@
+I tried a few thingsafter looking at the source code.
+At dirst I tried using '<censored>' as the xor key - didn't work.
+Then, after noticing that the script to wechallinfo also used '<censored>' I thought that maybe the xor key was the password to this level - didn't work.
+
+I then realised that the cookie would have to be json and would most likely be the same order as $defaultdata - Worked
+
+Python decode and encode script in folder.
+
+Flag:
+EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3

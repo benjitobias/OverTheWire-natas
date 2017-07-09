@@ -1,0 +1,6 @@
+Looking at the source I saw that there was an image in /files/pixel.png.
+Browsing to /files/ show me that there are two files; pixels.png and users.txt.
+Opening users.txt gave me the password to natas3
+
+Flag:
+sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14

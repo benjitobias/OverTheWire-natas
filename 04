@@ -1,0 +1,9 @@
+Browsing shows:
+
+Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/" 
+
+I ran Burp proxy and edited the referer to http://natas5.natas.labs.overthewire.org/
+
+Flag:
+
+iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
