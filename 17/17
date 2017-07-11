@@ -1,0 +1,7 @@
+I had a feeling that this was a time based attack but I had no idea how to do it (after making an attempt to see how long the session took)
+I googled it and learnt about a time based blind SQLi.
+
+I stole the syntax and wrote a script based on challenge 15
+
+Flag:
+xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP

@@ -1,0 +1,17 @@
+I got stuck on this one and had to google it.
+
+First of all, code injection was done using the $() capability.
+
+I tried just grep injecting, didn't work. I also tried appending the etc/natas_webpass/natas17 file to the dictionary.txt file and then running the grep, didn't work.
+
+The solution was basically running a brute force grep on the password file and appending a word I know that is in the dictionary file to the end of the command:
+	$(grep a /etc/natas_webpass/natas17)africa
+If the brute forced string existed in the password, then the final search would be for <string>+africe (which doesn't exists) if it failed, then the search word be for africa and I'd get a result.
+
+I then wrote a script that wasn't working and it was becuase I was an idiot and the regex didn't check that the password started from the start of the string and therefore I was only getting half the password.
+
+	$(grep ^a /etc/natas_webpass/natas17)africa
+
+Flag:
+
+8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
