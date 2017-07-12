@@ -1,0 +1,9 @@
+Actually had to google to understand how to generate a new cookie *facepalm*.
+I forgot that I had to login, and then reload the page.
+
+Looking at the cookie, and a bit of python I realied that the cookie was basically a randomly generated number (it seems up to 1000) and then a "-" and the the username, reverse (or something like that, it's in the python script).
+
+Then we brute force cookies :)
+
+Flag:
+eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
