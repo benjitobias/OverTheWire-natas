@@ -1,0 +1,11 @@
+(If I understand correctly)
+
+When reading the session files, the script splits the file by '\n' and then iterated over each line.
+It then splits each line by " " and if something exists on both sides of the space ("key value") it then adds them to the $_SESSION array as key value.
+If the the $_SESSION array has an "admin" key that contains "1" it will print the password.
+What we need to do is first create a session and "inject" the 'admin 1' into the file and then reload the page with the same session (same name) and the password is given.
+
+http://natas20.natas.labs.overthewire.org/index.php?name=admin2%0Aadmin%201
+
+Flag:
+IFekPyrQXftziDEsUr3x21sYuahypdgJ
