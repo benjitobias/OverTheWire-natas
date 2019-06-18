@@ -1,5 +1,5 @@
-http://natas21-experimenter.natas.labs.overthewire.org/index.php?debug=1&align=test&fontsize=large&bgcolor=green&admin=1&submit=1&PHPSESSID=6ao7q3nov3ns718v22f19ulim7
-
 In natas21-experimenter if "submit=1" is set in the request, any key/value is added to the $_SESSION variable.
 Since natas21-experimenter and natas21 are on the same site, if we take the PHPSESSID cookie from natas21 and add to the keys in natas21-experimenter admin=1 and change the cookie to the natas21 cookie, admin=1 will be added to $_SESSION browse to natas21 and voila.
 
+Flag:
+chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
