@@ -1,0 +1,9 @@
+Ok, Good one.
+I assumed that I had to include a file but there is a "safeinclude" function - which isn't very safe.
+It blocks directory traversal by replacing "../" with "" but not recursively so I can just pass "..././" and now I have traversal.
+Next it includes a file, I have the log path so I can include that. 
+Now, if I change my User-Agent to php code, when the log gets include then my User-Agent gets interpreted as code.
+Once I have code execution, I just set the code to read the right file (I can also use a supplied function from index.php - listFiles) to help me.
+
+Flag:
+oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T
