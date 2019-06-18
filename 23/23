@@ -1,0 +1,6 @@
+There is comparison if the passwd field contains "iloveyou" and is also larger than 10, if so then the flag is given.
+When php compares a string against a number, if the string begins with a number ala "1234iloveyou" then the number part (1234) is interpreted as an integer.
+Insert "1234iloveyou" into the passwd field and get the flag.
+
+Flag:
+OsRmXFguozKpTZZ5X14zNO43379LZveg
