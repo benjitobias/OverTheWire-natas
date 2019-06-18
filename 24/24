@@ -1,0 +1,4 @@
+There is a strcmp done on the passwd field, if we cause passwd to be an array, strcmp acts strange and validates for any text
+
+Flag:
+GHF6X7YwACaYYssHVY05cFq83hRktl4c
