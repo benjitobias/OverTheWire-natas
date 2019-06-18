@@ -1,0 +1,5 @@
+If the request contains revelio then a redirect is returned but then the password is sent.
+If I make the request and disable redirects, we get the password
+
+Flag:
+D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
