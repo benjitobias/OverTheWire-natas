@@ -1,0 +1,8 @@
+So the code uses unserialize which immediately caught my attention.
+After reading a bit here: https://www.netsparker.com/blog/web-security/untrusted-data-unserialize-php/
+I understood that I need to create a malicious object.
+The code unserializes the cookie after decoding it from base64.
+So, create a malicious object based on the source code of the site using the Logger object and then send it, serialized and encoded as a cookie.
+
+Flag:
+55TBjpPZUUJgVP5b3BnbG6ON9uDPVzCJ
