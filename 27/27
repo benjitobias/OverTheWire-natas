@@ -1,0 +1,8 @@
+I cheated a bit here and got a hint from the internet.
+The username and password fields are defined as varchar(64) meaning they only last up to 64 characters.
+
+By creating a user "natas28                                                                                                                                      a"
+Which is natas28 followed by enought spaces to extend over 64 characters and then another character, the validations pass and the user is created with my password, but when loggin in using it, the login query will only go up to 64 and therefore it returns the original natas28 password.
+
+Flag:
+JWwR438wkgTsNKBbcJoowyysdM82YjeF
