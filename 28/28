@@ -1,3 +1,4 @@
 If I change something in the URL query I get "Incorrect amount of PKCS#7 padding for blocksize" which means there is a problem with the encryption padding.
 There is an attack called "The Padding Oracle Attack" that can give me some direction.
 I'll look into it at some point.
+https://robertheaton.com/2013/07/29/padding-oracle-attack/
