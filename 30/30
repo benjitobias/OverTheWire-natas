@@ -3,4 +3,4 @@ The problem here is that param receives the password variable as is it given. Th
 What quote then receives is an array. If quote receives an array, the second variable defines the data type and how to escape. If the data type provided refers to a numeric type, no escaping is done and that allows for an SQLi.
 
 Flag:
-natas31hay7aecuungiuKaezuathuk9biin0pu1
+hay7aecuungiuKaezuathuk9biin0pu1
