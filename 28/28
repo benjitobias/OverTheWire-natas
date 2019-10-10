@@ -2,3 +2,13 @@ If I change something in the URL query I get "Incorrect amount of PKCS#7 padding
 There is an attack called "The Padding Oracle Attack" that can give me some direction.
 I'll look into it at some point.
 https://robertheaton.com/2013/07/29/padding-oracle-attack/
+
+Fucking complicated. It's not a Padding Oracle Attack. I had to read a lot and eventually found a video with the solution (which I barely understood).
+https://www.youtube.com/watch?v=qpC2sNcRj5o
+
+After watching the video, I'm going to try and solve it again in order to fully understand.
+
+FUUUUUUCK. Watch video and read code written to understand solution.
+
+Flag:
+airooCaiseiyee8he8xongien9euhe8b
