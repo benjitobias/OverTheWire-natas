@@ -1,0 +1,6 @@
+In the source code you can see that the query is escaped using quote(param('password')).
+The problem here is that param receives the password variable as is it given. The param function, if given multiple paramaters with the same name ie. password=test&password=test2 will group them as an array.
+What quote then receives is an array. If quote receives an array, the second variable defines the data type and how to escape. If the data type provided refers to a numeric type, no escaping is done and that allows for an SQLi.
+
+Flag:
+natas31hay7aecuungiuKaezuathuk9biin0pu1
