@@ -1,0 +1,20 @@
+Same as previous one (31) but this time the RCE is vital (need to run getpassword - discovered after running ls)
+NOTES: 
+	Binaries have to have path given (can't run ls need to run /bin/ls)
+	ls needs to have a flag '/bin/ls .' I used url encoding, don't know if need '/bin/ls%20.%20|' (| needed at end to run as command, not sure about final space)
+
+Perl Jam 2 - Netanel Rubin
+https://www.youtube.com/watch?v=BYl3-c2JSL8
+
+This guy has a video explaining attacks on perl (he also has a part 1).
+
+If multiple "file" params are sent, it only checks whether one of them is actually a file and will only use the first one.
+If the first one is set to "ARGV" then the '<$file>' statment will run open() on the arguments passed to it (from the url ?index.pl?/etc/natas_webpass/natas32).
+This in itself will read and give us the flag.
+
+To add onto that, RCE is possible. Perls open() will interpret a filename ending in '|' as a command. Therefore we can also run commands index.pl?./getpassword%20|
+
+
+Flag:
+shoogeiGa2yee3de6Aex8uaXeech5eey
+
