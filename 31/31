@@ -1,0 +1,16 @@
+Perl Jam 2 - Netanel Rubin
+https://www.youtube.com/watch?v=BYl3-c2JSL8
+
+This guy has a video explaining attacks on perl (he also has a part 1).
+
+If multiple "file" params are sent, it only checks whether one of them is actually a file and will only use the first one.
+If the first one is set to "ARGV" then the '<$file>' statment will run open() on the arguments passed to it (from the url ?index.pl?/etc/natas_webpass/natas32).
+This in itself will read and give us the flag.
+
+To add onto that, RCE is possible. Perls open() will interpret a filename ending in '|' as a command. Therefore we can also run commands index.pl?/bin/cat%20/etc/natas_webpass/natas32%20|
+
+Screenshot of burp request attached.
+
+Flag:
+no1vohsheCaiv3ieH4em1ahchisainge
+
