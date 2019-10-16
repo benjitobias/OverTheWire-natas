@@ -12,3 +12,7 @@ Notes:
 * This worked on local tests and after looking online, this is the correct solution. For some reason, it doesn't work properly when run against the server (using the script or manually) and I have strong suspisions that they're may well be an issue with the challenge at the moment
 * Looking at the source code, I see that uploaded files are put into the "upload" directory but they are tried to run from the "uploads" directory. I'm not sure if this is a typo or on purpose but since I couldn't get it to properly work I don't know. I've created 2 version of the exploit, one that does traversal and one that doesn't.
 
+
+Flag:
+* Taken from internet and base64
+c2h1NW91U3U2ZWljaWVsYWhoYWUwbW9oZDR1aTV1aWcK
