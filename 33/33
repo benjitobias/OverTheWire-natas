@@ -1,0 +1,14 @@
+https://blog.ripstech.com/2018/new-php-exploitation-technique/
+
+Looking at the source code we can see that md5_sum is used on a file whose name we have control over (filename).
+This is vulnerable to a phar object injection which would then allow us to change the $signature variable to our hash and flow into the passthru.
+Steps:
+
+1) Upload shell (pwn.php) while setting the filename to pwn.php
+2) Upload the malicious phar (exploit.phar) while changing the filename to exploit.phar (generated using the php scripts)
+3) Upload a file again (I used the malicious phar) while changing the name to phar://../upload/pwn.php
+
+Notes:
+* This worked on local tests and after looking online, this is the correct solution. For some reason, it doesn't work properly when run against the server (using the script or manually) and I have strong suspisions that they're may well be an issue with the challenge at the moment
+* Looking at the source code, I see that uploaded files are put into the "upload" directory but they are tried to run from the "uploads" directory. I'm not sure if this is a typo or on purpose but since I couldn't get it to properly work I don't know. I've created 2 version of the exploit, one that does traversal and one that doesn't.
+
